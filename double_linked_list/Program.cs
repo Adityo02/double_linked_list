@@ -97,6 +97,11 @@ namespace double_linked_list
             previous = current = null;
             if (search(rollNo, ref previous, ref current) == false)
                 return false;
+            //the begining of data
+            if (current.next == null)
+            {
+
+            }
         }
     }
     internal class Program
