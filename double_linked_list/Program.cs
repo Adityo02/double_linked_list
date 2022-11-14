@@ -40,6 +40,12 @@ namespace double_linked_list
             Node newNode = new Node();
             newNode.noMhs = nim;
             newNode.name = nm;
+
+            //Check if the list empty
+            if (START == null || nim <= START.noMhs))
+            {
+
+            }
         }
     }
     internal class Program
