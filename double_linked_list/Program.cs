@@ -151,6 +151,11 @@ namespace double_linked_list
                 for (currentNode = START; currentNode != null; currentNode = currentNode.next)
                 { }
 
+                while(currentNode != null)
+                {
+                    Console.Write(currentNode.noMhs + "" + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
             }
         }
     }
