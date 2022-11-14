@@ -100,6 +100,13 @@ namespace double_linked_list
             //the begining of data
             if (current.next == null)
             {
+                previous.next = null;
+                return true;
+            }
+            //Node between two nodes in the list
+            if (current == START)
+            {
+                START = START.next;
 
             }
         }
