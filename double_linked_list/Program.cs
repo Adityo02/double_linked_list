@@ -49,6 +49,7 @@ namespace double_linked_list
                     Console.WriteLine("\nDuplicate number not Allowed");
                     return;
                 }
+                newNode.next = START;
             }
         }
     }
