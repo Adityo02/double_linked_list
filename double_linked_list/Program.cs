@@ -31,7 +31,7 @@ namespace double_linked_list
         }
         public void addNote()
         {
-
+            int nim;
         }
     }
     internal class Program
