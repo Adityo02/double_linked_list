@@ -175,6 +175,10 @@ namespace double_linked_list
                 Console.WriteLine("6. Exit\n");
                 Console.Write("Enter your choice (1-6): ");
                 char ch = Convert.ToChar(Console.ReadLine());
+                switch (ch)
+                {
+
+                }
             }
         }
     }
