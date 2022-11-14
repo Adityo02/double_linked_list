@@ -42,7 +42,7 @@ namespace double_linked_list
             newNode.name = nm;
 
             //Check if the list empty
-            if (START == null || nim <= START.noMhs))
+            if ((START == null || nim <= START.noMhs))
             {
                 if ((START != null) && (nim == START.noMhs))
                 {
@@ -77,6 +77,7 @@ namespace double_linked_list
             //if the node is to be inserted at the end of the list
             if (current == null)
             {
+                newNode.next = null;
 
             }
         }
