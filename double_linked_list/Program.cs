@@ -12,7 +12,8 @@ namespace double_linked_list
         * it consist of the information part and links to
         * its succeeding and preceeding
         * in terms of nextand previous */
-        public int noMhs:
+        public int noMhs;
+        public string name;
     }
     internal class Program
     {
