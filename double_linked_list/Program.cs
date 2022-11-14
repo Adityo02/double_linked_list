@@ -32,7 +32,9 @@ namespace double_linked_list
         public void addNote()
         {
             int nim;
-            string nim;
+            string nm;
+            Console.Write("\nEnter the roll number of the student: ");
+            nim = Convert
         }
     }
     internal class Program
