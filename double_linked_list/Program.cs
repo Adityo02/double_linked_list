@@ -53,6 +53,8 @@ namespace double_linked_list
                 if (START != null)
                     START.prev = newNode;
                 newNode.prev = null;
+                START = newNode;
+                return;
             }
         }
     }
