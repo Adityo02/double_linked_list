@@ -159,6 +159,11 @@ namespace double_linked_list
             }
         }
     }
+    
+    
+    
+    
+    
     class Program
     {
         static void Main(string[] args)
@@ -166,22 +171,42 @@ namespace double_linked_list
             DoubleLinkedList obj = new DoubleLinkedList();
             while (true)
             {
-                Console.WriteLine("\nMenu");
-                Console.WriteLine("1. Add a Record to the list");
-                Console.WriteLine("2. Delete a record from the list");
-                Console.WriteLine("3. View all records in the ascending order of roll numbers");
-                Console.WriteLine("4. View all records in the descending order of roll numbers");
-                Console.WriteLine("5. Search for a record in the lis");
-                Console.WriteLine("6. Exit\n");
-                Console.Write("Enter your choice (1-6): ");
-                char ch = Convert.ToChar(Console.ReadLine());
-                switch (ch)
+                try
                 {
-                    case '1':
-                        {
-                            obj.addNote();
-                        }
-                        break;
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Add a Record to the list");
+                    Console.WriteLine("2. Delete a record from the list");
+                    Console.WriteLine("3. View all records in the ascending order of roll numbers");
+                    Console.WriteLine("4. View all records in the descending order of roll numbers");
+                    Console.WriteLine("5. Search for a record in the lis");
+                    Console.WriteLine("6. Exit\n");
+                    Console.Write("Enter your choice (1-6): ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.addNote();
+                            }
+                            break;
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+                                Console.Write("\nEnter the roll number of the student" +
+                        " Whose record is to be deleted: ");
+                                int rollNo = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.dellNote(rollNo) == false)
+                                    Console.WriteLine("Record not found");
+                                else
+                                    Console.WriteLine("Record with roll number " + rollNo + " deleted \n");
+                            }
+                            break ;
+                    }
                 }
             }
         }
