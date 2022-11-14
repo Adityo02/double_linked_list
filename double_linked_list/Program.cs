@@ -79,7 +79,14 @@ namespace double_linked_list
             {
                 newNode.next = null;
                 previous.next = newNode;
+                return ;
             }
+            current.prev = newNode;
+            previous.next = newNode;
+        }
+        public bool search(int rollNo, ref Node previous, ref Node current)
+        {
+
         }
     }
     internal class Program
