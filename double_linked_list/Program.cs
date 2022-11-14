@@ -16,6 +16,8 @@ namespace double_linked_list
         public string name;
         //point to the succeding node
         public Node next;
+        //point to the precceding node
+        public Node prev;
     }
     internal class Program
     {
