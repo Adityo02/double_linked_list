@@ -91,6 +91,10 @@ namespace double_linked_list
                 current = current.next) { }
             return (current != null);
         }
+        public bool dellNote(int rollNo)
+        {
+
+        }
     }
     internal class Program
     {
