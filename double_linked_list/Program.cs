@@ -29,6 +29,10 @@ namespace double_linked_list
         {
             START = null;
         }
+        public void addNote()
+        {
+
+        }
     }
     internal class Program
     {
