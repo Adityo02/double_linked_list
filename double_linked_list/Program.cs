@@ -142,7 +142,16 @@ namespace double_linked_list
 
         public void descending()
         {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the Descending order of" + "roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                { }
 
+            }
         }
     }
     internal class Program
