@@ -38,6 +38,8 @@ namespace double_linked_list
             Console.Write("\nEnter the name of the student: ");
             nm = Console.ReadLine();
             Node newNode = new Node();
+            newNode.noMhs = nim;
+            newNode.name = nm;
         }
     }
     internal class Program
