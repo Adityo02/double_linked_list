@@ -8,7 +8,11 @@ namespace double_linked_list
 {
     class Node
     {
-
+        /* Node class repsents the node of doubly linked list
+        * it consist of the information part and links to
+        * its succeeding and preceeding
+        * in terms of nextand previous */
+        public int noMhs:
     }
     internal class Program
     {
