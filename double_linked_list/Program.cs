@@ -61,6 +61,12 @@ namespace double_linked_list
             for (current = previous = START;
                 current != null && nim >= current.noMhs;
                 previous = current, current = current.next)
+            {
+                if (nim == current.noMhs)
+                {
+
+                }
+            }
         }
     }
     internal class Program
