@@ -78,7 +78,7 @@ namespace double_linked_list
             if (current == null)
             {
                 newNode.next = null;
-
+                previous.next = newNode;
             }
         }
     }
