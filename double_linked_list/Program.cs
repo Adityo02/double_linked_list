@@ -50,6 +50,9 @@ namespace double_linked_list
                     return;
                 }
                 newNode.next = START;
+                if (START != null)
+                    START.prev = newNode;
+                newNode.prev = null;
             }
         }
     }
