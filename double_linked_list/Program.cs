@@ -93,7 +93,10 @@ namespace double_linked_list
         }
         public bool dellNote(int rollNo)
         {
-
+            Node previous, current;
+            previous = current = null;
+            if (search(rollNo, ref previous, ref current) == false)
+                return false;
         }
     }
     internal class Program
