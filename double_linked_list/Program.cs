@@ -56,6 +56,8 @@ namespace double_linked_list
                 START = newNode;
                 return;
             }
+            // if the node is to be inserted at between two node
+            Node previous, current;
         }
     }
     internal class Program
