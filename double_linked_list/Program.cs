@@ -159,10 +159,12 @@ namespace double_linked_list
             }
         }
     }
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            DoubleLinkedList obj = new DoubleLinkedList();
+            
         }
     }
 }
