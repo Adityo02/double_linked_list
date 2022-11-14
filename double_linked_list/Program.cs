@@ -44,7 +44,11 @@ namespace double_linked_list
             //Check if the list empty
             if (START == null || nim <= START.noMhs))
             {
-
+                if ((START != null) && (nim == START.noMhs))
+                {
+                    Console.WriteLine("\nDuplicate number not Allowed");
+                    return;
+                }
             }
         }
     }
